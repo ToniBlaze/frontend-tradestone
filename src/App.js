@@ -7,8 +7,8 @@ import ErrorPage from "./pages/ErrorPage";
 
 // COMPONENTS
 import Homepage from "./pages/Homepage";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
+// import Register from "./pages/Register";
+// import Login from "./pages/Login";
 
 function App() {
   return (
