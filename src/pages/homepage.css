@@ -1,0 +1,72 @@
+.home-bg {
+  background-image: url("../assets/images/hm-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  color: white;
+}
+
+.home-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.95) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-mt {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.home-btn {
+  --glow-color: #5f2ea5;
+  --glow-spread-color:#975ee7;
+  --enhanced-glow-color: #ac71ff;
+  --btn-color: #ad8bdd;
+  border: 0.25em solid var(--glow-color);
+  padding: 0.65em 3em;
+  color: var(--glow-color);
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 2.2em .6em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.1em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  min-width: 110px;
+  font-size: 1.1em;
+}
+
+
+
+.home-btn:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.home-btn:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
